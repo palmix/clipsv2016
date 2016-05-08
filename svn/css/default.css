@@ -232,26 +232,30 @@ input.hostButton:active{background:#FF001D;}
 .form_boxv2{background:#000;border:2px solid #282828;padding:0px;margin:0 1px 0 1px;color:#333;font-weight:normal;font-size:15px;line-height:19px;}
 
 
-.click_to_Watch {
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
-    width: 62px;
-    height: 62px;
-    margin: -31px 0 0 -31px;
-    background: transparent url(https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png) no-repeat 50%;
-    opacity: .9;
+    .click_to_Watch {
+background: url('https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png') no-repeat center;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 1;
+  /* Mozilla */
+  opacity:  1;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
   .click_to_Watch:hover {
-      background: url('https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png') no-repeat center;
-    opacity: 0.7;
+     opacity: .8;
+    -moz-opacity: .8;
   }
-    .click_to_Watch:active {
-      background: url('https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png') no-repeat center;
-width:76px;height:76px;margin:-38px 0 0 -38px;
-  background-size:95%;
+   .click_to_Watch:active {
+       opacity: .7;
+    -moz-opacity: .7;
+  background-size:52px;
   }
+
 #blockvideo {
   background: #000;
   filter: alpha(opacity=60);
