@@ -233,21 +233,26 @@ input.hostButton:active{background:#FF001D;}
 
 
 .click_to_Watch {
-background: url('https://lh3.googleusercontent.com/-S4fjbb0Aru0/Vm39OXgWrJI/AAAAAAAAE5M/a2z39I9EXmc/s90/r.png') no-repeat center;
-  filter: alpha(opacity=60);
-  /* IE */
-  -moz-opacity: 1;
-  /* Mozilla */
-  opacity:  1;
-  /* CSS3 */
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 62px;
+    height: 62px;
+    margin: -31px 0 0 -31px;
+    background: transparent url(https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png) no-repeat 50%;
+    opacity: .9;
 }
-  .click_to_Watch:hover {background: url('https://lh3.googleusercontent.com/-ZQ2vSsvIlak/Vm39OU9Px1I/AAAAAAAAE5I/94ZwEq4fV7A/s90/b.png') no-repeat center;}
-  #blockvideo {
+  .click_to_Watch:hover {
+      background: url('https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png') no-repeat center;
+    opacity: 0.7;
+  }
+    .click_to_Watch:active {
+      background: url('https://lh3.googleusercontent.com/-yUZs5pkpTIg/Vy9CxvyHzoI/AAAAAAAAFsc/Yo34hxmCvNYS9R8MV7mdwDDKWgSJ-9nbQCLcB/s60/playbutton.png') no-repeat center;
+width:76px;height:76px;margin:-38px 0 0 -38px;
+  background-size:95%;
+  }
+#blockvideo {
   background: #000;
   filter: alpha(opacity=60);
   /* IE */
